@@ -2,12 +2,12 @@
 import * as Sentry from "@sentry/node";
 
 Sentry.init({
-  dsn: "https://8144e796606cb52be65ab5138d289ae0@o4510441333587968.ingest.us.sentry.io/4510441343746048",
+  dsn: "https://104675165b5a0b580eb80877fad67c69@o4510493242884096.ingest.us.sentry.io/4510493247799296",
+
+  integrations: [
+    Sentry.mongooseIntegration(),  
+  ],
   // Setting this option to true will send default PII data to Sentry.
   // For example, automatic IP address collection on events
   sendDefaultPii: true,
-
-   integrations: [
-    Sentry.mongooseIntegration(),   
-  ],
 });
